@@ -27,6 +27,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -148,4 +149,16 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries DE UMA DETERMINADA QUANTIDADE DE PX(NESSE CASO) USAR REGRA DENTRO DESSE MEDIA. so funciona se no html tiver a linha meta de viewport que faz adatptação de largura e escalas*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-descktop.jpg);
+
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-descktop-light.jpg);
+  }
 }
